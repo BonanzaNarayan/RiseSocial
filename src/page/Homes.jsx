@@ -57,8 +57,8 @@ const TopServices = () => (
           },
           {
             platform: <SiTiktok className="w-8 h-8 mr-2 text-black" />,
-            title: "TikTok Views",
-            price: "GH65/10k",
+            title: "TikTok Followers",
+            price: "GH65/1k",
             features: ["Organic Engagement", "Safe & Secure", "Real Users"]
           },
           {
