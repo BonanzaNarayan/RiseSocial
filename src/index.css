@@ -1,0 +1,129 @@
+@import 'tailwindcss';
+
+/* index.css */
+
+/* Add fade-in-down animation */
+@keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-down {
+    animation: fade-in-down 0.5s ease-out;
+  }
+
+  
+  /* Optional: Add custom hover states */
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+
+
+  /* Custom animations */
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-delayed {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(390deg);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+  
+  .animate-rotate {
+    animation: rotate 30s linear infinite;
+  }
+  
+  .animate-rotate-delayed {
+    animation: rotate-delayed 35s linear infinite;
+  }
+  
+  .animate-float {
+    animation: float 15s ease-in-out infinite;
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+  
+  .animate-bounce {
+    animation: bounce 1.5s infinite;
+  }
+
+  .transition-shadow {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+
+  /* Custom drag & drop zone states */
+.drag-active {
+    border-color: #8b5cf6;
+    background-color: #f5f3ff;
+  }
+  
+  /* Transition effects */
+  .transition-colors {
+    transition: background-color 0.3s ease;
+  }
+
+  /* Add to your CSS */
+.whitespace-pre-line {
+    white-space: pre-line;
+  }
+
+  /* Add to your CSS file */
+.floating-contact-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .floating-contact-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 300ms ease-in;
+  }
